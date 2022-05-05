@@ -1,21 +1,19 @@
+import 'package:ecom/home_page.dart';
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
+/// This is a first class built as a sample.
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: const Text("Welcome to flutter after long time."),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
